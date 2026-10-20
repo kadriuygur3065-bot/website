@@ -1,0 +1,117 @@
+body {
+    background-color: #ffffff; /* Arka planı beyaz yaptık */
+    color: #000000;            /* Genel yazı rengini siyah yaptık */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Profil Kutusu */
+.insta-profil {
+    width: 350px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Üst Kısım (Foto + İstatistik) */
+.profil-ust {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profil-foto {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profil-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.istatistikler {
+    display: flex;
+    gap: 20px;
+}
+
+.sayi-kutu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+.sayi-kutu strong {
+    font-size: 16px;
+    color: #000;
+}
+
+.sayi-kutu span {
+    color: #737373; /* İstatistik altındaki gri yazılar */
+    font-size: 12px;
+}
+
+/* İsim ve Bio */
+.profil-bilgi {
+    font-size: 14px;
+}
+
+.profil-bilgi h2 {
+    font-size: 16px;
+    margin: 0 0 4px 0;
+    color: #000;
+}
+
+.profil-bilgi p {
+    margin: 0 0 4px 0;
+    color: #262626;
+}
+
+.bio-yazi {
+    color: #000;
+}
+
+/* QR ve Buton Bölümü */
+.qr-bolumu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 15px;
+    background: #fafafa; /* QR kutusunun arkası için hafif gri bir ton */
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #dbdbdb; /* Şık bir çerçeve */
+}
+
+.qr-bolumu img {
+    width: 130px;
+    height: 130px;
+    border-radius: 8px;
+}
+
+.takip-buton {
+    background-color: #0095f6;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.takip-buton:hover {
+    background-color: #1877f2;
+}
